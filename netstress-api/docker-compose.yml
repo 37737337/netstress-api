@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  netstress-api:
+    build: .
+    container_name: netstress_api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
